@@ -18,6 +18,7 @@ const (
 type Led struct {
 	ID                string  `gorethink:"id,omitempty" json:"ID"`
 	Mac               string  `gorethink:"mac" json:"mac"`
+	IP                string  `json:"ip"`
 	Group             int     `gorethink:"group" json:"group"`
 	Protocol          string  `gorethink:"protocol" json:"protocol"`
 	Topic             string  `gorethink:"topic" json:"topic"`
