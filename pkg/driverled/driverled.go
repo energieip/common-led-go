@@ -16,38 +16,38 @@ const (
 
 //Led led driver representation
 type Led struct {
-	ID                string  `gorethink:"id,omitempty" json:"ID"`
-	Mac               string  `gorethink:"mac" json:"mac"`
+	ID                string  `json:"ID,omitempty"`
+	Mac               string  `json:"mac"`
 	IP                string  `json:"ip"`
-	Group             int     `gorethink:"group" json:"group"`
-	Protocol          string  `gorethink:"protocol" json:"protocol"`
-	Topic             string  `gorethink:"topic" json:"topic"`
-	SwitchMac         string  `gorethink:"switch_mac" json:"switchMac"`
-	IsConfigured      bool    `gorethink:"is_configured" json:"isConfigured"`
-	Version           float32 `gorethink:"version" json:"version"`
-	IsBleEnabled      bool    `gorethink:"is_ble_enabled" json:"isBleEnabled"`
-	Temperature       int     `gorethink:"temperature" json:"temperature"`
-	Error             int     `gorethink:"error" json:"error"`
-	ResetNumbers      int     `gorethink:"reset_numbers" json:"resetNumbers"`
-	InitialSetupDate  float64 `gorethink:"initial_setup_date" json:"initialSetupDate"`
-	LastResetDate     float64 `gorethink:"last_reset_date" json:"lastResetDate"`
-	IMax              int     `gorethink:"i_max" json:"iMax"`
-	SlopeStart        int     `gorethink:"slope_start" json:"slopeStart"`
-	SlopeStop         int     `gorethink:"slope_stop" json:"slopeStop"`
-	Duration          float64 `gorethink:"duration" json:"duration"`
-	Setpoint          int     `gorethink:"setpoint" json:"setpoint"`
-	ThresoldLow       int     `gorethink:"thresold_low" json:"thresoldLow"`
-	ThresoldHigh      int     `gorethink:"thresold_high" json:"thresoldHigh"`
-	DaisyChainEnabled bool    `gorethink:"daisy_chain_enabled" json:"daisyChainEnabled"`
-	DaisyChainPos     int     `gorethink:"daisy_chain_pos" json:"daisyChainPos"`
-	DevicePower       int     `gorethink:"device_power" json:"devicePower"`
-	Energy            float64 `gorethink:"energy" json:"energy"`
-	VoltageLed        int     `gorethink:"voltage_led" json:"voltageLed"`
-	VoltageInput      int     `gorethink:"voltage_input" json:"voltageInput"`
-	LinePower         int     `gorethink:"line_power" json:"linePower"`
-	TimeToAuto        int     `gorethink:"time_to_auto" json:"timeToAuto"`
-	Auto              bool    `gorethink:"auto" json:"auto"`
-	Watchdog          int     `gorethink:"watchdog" json:"watchdog"`
+	Group             int     `json:"group"`
+	Protocol          string  `json:"protocol"`
+	Topic             string  `json:"topic"`
+	SwitchMac         string  `json:"switchMac"`
+	IsConfigured      bool    `json:"isConfigured"`
+	Version           float32 `json:"version"`
+	IsBleEnabled      bool    `json:"isBleEnabled"`
+	Temperature       int     `json:"temperature"`
+	Error             int     `json:"error"`
+	ResetNumbers      int     `json:"resetNumbers"`
+	InitialSetupDate  float64 `json:"initialSetupDate"`
+	LastResetDate     float64 `json:"lastResetDate"`
+	IMax              int     `json:"iMax"`
+	SlopeStart        int     `json:"slopeStart"`
+	SlopeStop         int     `json:"slopeStop"`
+	Duration          float64 `json:"duration"`
+	Setpoint          int     `json:"setpoint"`
+	ThresoldLow       int     `json:"thresoldLow"`
+	ThresoldHigh      int     `json:"thresoldHigh"`
+	DaisyChainEnabled bool    `json:"daisyChainEnabled"`
+	DaisyChainPos     int     `json:"daisyChainPos"`
+	DevicePower       int     `json:"devicePower"`
+	Energy            float64 `json:"energy"`
+	VoltageLed        int     `json:"voltageLed"`
+	VoltageInput      int     `json:"voltageInput"`
+	LinePower         int     `json:"linePower"`
+	TimeToAuto        int     `json:"timeToAuto"`
+	Auto              bool    `json:"auto"`
+	Watchdog          int     `json:"watchdog"`
 }
 
 //LedSetup initial setup send by the server when the driver is authorized
