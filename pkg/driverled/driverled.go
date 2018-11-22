@@ -75,14 +75,6 @@ type LedConf struct {
 	ThresoldLow  *int   `json:"thresoldLow"`
 }
 
-// ToMapInterface convert led struct in Map[string] interface{}
-func (led Led) ToMapInterface() map[string]interface{} {
-	var inInterface map[string]interface{}
-	inrec, _ := json.Marshal(led)
-	json.Unmarshal(inrec, &inInterface)
-	return inInterface
-}
-
 //ToLed convert map interface to Led object
 func ToLed(val interface{}) (*Led, error) {
 	var light Led
