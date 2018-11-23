@@ -87,6 +87,17 @@ func ToLed(val interface{}) (*Led, error) {
 	return &light, err
 }
 
+//ToLedSetup convert map interface to Led object
+func ToLedSetup(val interface{}) (*LedSetup, error) {
+	var light LedSetup
+	inrec, err := json.Marshal(val)
+	if err != nil {
+		return nil, err
+	}
+	err = json.Unmarshal(inrec, &light)
+	return &light, err
+}
+
 // ToJSON dump led struct
 func (led Led) ToJSON() (string, error) {
 	inrec, err := json.Marshal(led)
