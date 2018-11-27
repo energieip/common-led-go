@@ -49,31 +49,34 @@ type Led struct {
 	TimeToAuto        int     `json:"timeToAuto"`
 	Auto              bool    `json:"auto"`
 	Watchdog          int     `json:"watchdog"`
+	FriendlyName      string  `json:"friendlyName"`
 }
 
 //LedSetup initial setup send by the server when the driver is authorized
 type LedSetup struct {
-	Mac          string `json:"mac"`
-	IMax         int    `json:"iMax"`
-	Group        *int   `json:"group"`
-	Auto         *bool  `json:"auto"`
-	Watchdog     *int   `json:"watchdog"`
-	IsBleEnabled *bool  `json:"isBleEnabled"`
-	ThresoldHigh *int   `json:"thresoldHigh"`
-	ThresoldLow  *int   `json:"thresoldLow"`
+	Mac          string  `json:"mac"`
+	IMax         int     `json:"iMax"`
+	Group        *int    `json:"group"`
+	Auto         *bool   `json:"auto"`
+	Watchdog     *int    `json:"watchdog"`
+	IsBleEnabled *bool   `json:"isBleEnabled"`
+	ThresoldHigh *int    `json:"thresoldHigh"`
+	ThresoldLow  *int    `json:"thresoldLow"`
+	FriendlyName *string `json:"friendlyName"`
 }
 
 //LedConf customizable configuration by the server
 type LedConf struct {
-	Mac          string `json:"mac"`
-	Group        *int   `json:"group"`
-	Setpoint     *int   `json:"setpoint"`
-	Auto         *bool  `json:"auto"`
-	Watchdog     *int   `json:"watchdog"`
-	IsConfigured *bool  `json:"isConfigured"`
-	IsBleEnabled *bool  `json:"isBleEnabled"`
-	ThresoldHigh *int   `json:"thresoldHigh"`
-	ThresoldLow  *int   `json:"thresoldLow"`
+	Mac          string  `json:"mac"`
+	Group        *int    `json:"group"`
+	Setpoint     *int    `json:"setpoint"`
+	Auto         *bool   `json:"auto"`
+	Watchdog     *int    `json:"watchdog"`
+	IsConfigured *bool   `json:"isConfigured"`
+	IsBleEnabled *bool   `json:"isBleEnabled"`
+	ThresoldHigh *int    `json:"thresoldHigh"`
+	ThresoldLow  *int    `json:"thresoldLow"`
+	FriendlyName *string `json:"friendlyName"`
 }
 
 //ToLed convert map interface to Led object
