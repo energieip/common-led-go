@@ -33,8 +33,6 @@ type Led struct {
 	InitialSetupDate  float64 `json:"initialSetupDate"`
 	LastResetDate     float64 `json:"lastResetDate"`
 	IMax              int     `json:"iMax"`
-	SlopeStart        int     `json:"slopeStart"`
-	SlopeStop         int     `json:"slopeStop"`
 	Duration          float64 `json:"duration"`
 	Setpoint          int     `json:"setpoint"`
 	ThresoldLow       int     `json:"thresoldLow"`
