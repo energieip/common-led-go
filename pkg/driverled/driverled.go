@@ -48,35 +48,38 @@ type Led struct {
 	Auto              bool    `json:"auto"`
 	Watchdog          int     `json:"watchdog"`
 	FriendlyName      string  `json:"friendlyName"`
+	DumpFrequency     int     `json:"dumpFrequency"`
 }
 
 //LedSetup initial setup send by the server when the driver is authorized
 type LedSetup struct {
-	Mac          string  `json:"mac"`
-	IMax         int     `json:"iMax"`
-	Group        *int    `json:"group"`
-	Auto         *bool   `json:"auto"`
-	Watchdog     *int    `json:"watchdog"`
-	IsBleEnabled *bool   `json:"isBleEnabled"`
-	ThresoldHigh *int    `json:"thresoldHigh"`
-	ThresoldLow  *int    `json:"thresoldLow"`
-	FriendlyName *string `json:"friendlyName"`
-	SwitchMac    string  `json:"switchMac"`
-	IsConfigured *bool   `json:"isConfigured"`
+	Mac           string  `json:"mac"`
+	IMax          int     `json:"iMax"`
+	Group         *int    `json:"group"`
+	Auto          *bool   `json:"auto"`
+	Watchdog      *int    `json:"watchdog"`
+	IsBleEnabled  *bool   `json:"isBleEnabled"`
+	ThresoldHigh  *int    `json:"thresoldHigh"`
+	ThresoldLow   *int    `json:"thresoldLow"`
+	FriendlyName  *string `json:"friendlyName"`
+	SwitchMac     string  `json:"switchMac"`
+	IsConfigured  *bool   `json:"isConfigured"`
+	DumpFrequency *int    `json:"dumpFrequency"`
 }
 
 //LedConf customizable configuration by the server
 type LedConf struct {
-	Mac          string  `json:"mac"`
-	Group        *int    `json:"group"`
-	Setpoint     *int    `json:"setpoint"`
-	Auto         *bool   `json:"auto"`
-	Watchdog     *int    `json:"watchdog"`
-	IsConfigured *bool   `json:"isConfigured"`
-	IsBleEnabled *bool   `json:"isBleEnabled"`
-	ThresoldHigh *int    `json:"thresoldHigh"`
-	ThresoldLow  *int    `json:"thresoldLow"`
-	FriendlyName *string `json:"friendlyName"`
+	Mac           string  `json:"mac"`
+	Group         *int    `json:"group"`
+	Setpoint      *int    `json:"setpoint"`
+	Auto          *bool   `json:"auto"`
+	Watchdog      *int    `json:"watchdog"`
+	IsConfigured  *bool   `json:"isConfigured"`
+	IsBleEnabled  *bool   `json:"isBleEnabled"`
+	ThresoldHigh  *int    `json:"thresoldHigh"`
+	ThresoldLow   *int    `json:"thresoldLow"`
+	FriendlyName  *string `json:"friendlyName"`
+	DumpFrequency *int    `json:"dumpFrequency"`
 }
 
 //ToLed convert map interface to Led object
