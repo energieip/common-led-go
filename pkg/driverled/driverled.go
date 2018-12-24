@@ -64,7 +64,7 @@ type LedSetup struct {
 	FriendlyName  *string `json:"friendlyName"`
 	SwitchMac     string  `json:"switchMac"`
 	IsConfigured  *bool   `json:"isConfigured"`
-	DumpFrequency *int    `json:"dumpFrequency"`
+	DumpFrequency int     `json:"dumpFrequency"`
 }
 
 //LedConf customizable configuration by the server
