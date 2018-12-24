@@ -62,6 +62,7 @@ type LedSetup struct {
 	ThresoldLow  *int    `json:"thresoldLow"`
 	FriendlyName *string `json:"friendlyName"`
 	SwitchMac    string  `json:"switchMac"`
+	IsConfigured *bool   `json:"isConfigured"`
 }
 
 //LedConf customizable configuration by the server
