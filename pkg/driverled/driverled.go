@@ -35,8 +35,8 @@ type Led struct {
 	IMax              int     `json:"iMax"`
 	Duration          float64 `json:"duration"`
 	Setpoint          int     `json:"setpoint"`
-	ThresoldLow       int     `json:"thresoldLow"`
-	ThresoldHigh      int     `json:"thresoldHigh"`
+	ThresholdLow      int     `json:"thresholdLow"`
+	ThresholdHigh     int     `json:"thresholdHigh"`
 	DaisyChainEnabled bool    `json:"daisyChainEnabled"`
 	DaisyChainPos     int     `json:"daisyChainPos"`
 	DevicePower       int     `json:"devicePower"`
@@ -59,8 +59,8 @@ type LedSetup struct {
 	Auto          *bool   `json:"auto"`
 	Watchdog      *int    `json:"watchdog"`
 	IsBleEnabled  *bool   `json:"isBleEnabled"`
-	ThresoldHigh  *int    `json:"thresoldHigh"`
-	ThresoldLow   *int    `json:"thresoldLow"`
+	ThresholdHigh *int    `json:"thresholdHigh"`
+	ThresholdLow  *int    `json:"thresholdLow"`
 	FriendlyName  *string `json:"friendlyName"`
 	SwitchMac     string  `json:"switchMac"`
 	IsConfigured  *bool   `json:"isConfigured"`
@@ -76,8 +76,8 @@ type LedConf struct {
 	Watchdog      *int    `json:"watchdog"`
 	IsConfigured  *bool   `json:"isConfigured"`
 	IsBleEnabled  *bool   `json:"isBleEnabled"`
-	ThresoldHigh  *int    `json:"thresoldHigh"`
-	ThresoldLow   *int    `json:"thresoldLow"`
+	ThresholdHigh *int    `json:"thresholdHigh"`
+	ThresholdLow  *int    `json:"thresholdLow"`
 	FriendlyName  *string `json:"friendlyName"`
 	DumpFrequency *int    `json:"dumpFrequency"`
 }
