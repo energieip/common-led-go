@@ -24,7 +24,7 @@ type Led struct {
 	SwitchMac         string  `json:"switchMac"`
 	IsConfigured      bool    `json:"isConfigured"`
 	SoftwareVersion   float32 `json:"softwareVersion"`
-	HardwareVersion   string  `json:"hardwareVersion"`
+	HardwareVersion   float32 `json:"hardwareVersion"`
 	IsBleEnabled      bool    `json:"isBleEnabled"`
 	Error             int     `json:"error"`
 	IMax              int     `json:"iMax"`
