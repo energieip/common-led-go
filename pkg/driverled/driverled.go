@@ -21,17 +21,12 @@ type Led struct {
 	IP                string  `json:"ip"`
 	Group             int     `json:"group"`
 	Protocol          string  `json:"protocol"`
-	Topic             string  `json:"topic"`
 	SwitchMac         string  `json:"switchMac"`
 	IsConfigured      bool    `json:"isConfigured"`
 	SoftwareVersion   float32 `json:"softwareVersion"`
 	HardwareVersion   string  `json:"hardwareVersion"`
 	IsBleEnabled      bool    `json:"isBleEnabled"`
-	Temperature       int     `json:"temperature"`
 	Error             int     `json:"error"`
-	ResetNumbers      int     `json:"resetNumbers"`
-	InitialSetupDate  float64 `json:"initialSetupDate"`
-	LastResetDate     float64 `json:"lastResetDate"`
 	IMax              int     `json:"iMax"`
 	Duration          float64 `json:"duration"`
 	Setpoint          int     `json:"setpoint"`
