@@ -5,7 +5,8 @@ import (
 )
 
 const (
-	DbName    = "status"
+	DbStatus  = "status"
+	DbConfig  = "config"
 	TableName = "leds"
 
 	UrlHello   = "setup/hello"
