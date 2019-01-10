@@ -29,6 +29,7 @@ type Led struct {
 	IsBleEnabled      bool    `json:"isBleEnabled"`
 	Error             int     `json:"error"`
 	IMax              int     `json:"iMax"`
+	PMax              int     `json:"pMax"`
 	Duration          float64 `json:"duration"`
 	Setpoint          int     `json:"setpoint"`
 	ThresholdLow      int     `json:"thresholdLow"`
@@ -45,6 +46,8 @@ type Led struct {
 	Watchdog          int     `json:"watchdog"`
 	FriendlyName      string  `json:"friendlyName"`
 	DumpFrequency     int     `json:"dumpFrequency"`
+	SlopeStart        int     `json:"slopeStart"`
+	SlopeStop         int     `json:"slopeStop"`
 	DefaultSetpoint   *int    `json:"defaultSetpoint,omitempty"` // when the switch is not responding
 }
 
@@ -52,6 +55,7 @@ type Led struct {
 type LedSetup struct {
 	Mac             string  `json:"mac"`
 	IMax            int     `json:"iMax"`
+	PMax            int     `json:"pMax"`
 	Group           *int    `json:"group,omitempty"`
 	Auto            *bool   `json:"auto,omitempty"`
 	Watchdog        *int    `json:"watchdog,omitempty"`
@@ -65,6 +69,8 @@ type LedSetup struct {
 	DefaultSetpoint *int    `json:"defaultSetpoint,omitempty"` // when the switch is not responding
 	SetpointManual  *int    `json:"setpointManual,omitempty"`
 	SetpointAuto    *int    `json:"setpointAuto,omitempty"`
+	SlopeStart      *int    `json:"slopeStart,omitempty"`
+	SlopeStop       *int    `json:"slopeStop,omitempty"`
 }
 
 //LedConf customizable configuration by the server
@@ -81,6 +87,8 @@ type LedConf struct {
 	ThresholdLow   *int    `json:"thresholdLow,omitempty"`
 	FriendlyName   *string `json:"friendlyName,omitempty"`
 	DumpFrequency  *int    `json:"dumpFrequency,omitempty"`
+	SlopeStart     *int    `json:"slopeStart,omitempty"`
+	SlopeStop      *int    `json:"slopeStop,omitempty"`
 }
 
 //ToLed convert map interface to Led object
